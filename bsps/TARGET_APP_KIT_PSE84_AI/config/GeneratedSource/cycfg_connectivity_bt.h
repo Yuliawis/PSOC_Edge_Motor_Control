@@ -1,0 +1,56 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#if !defined(CYCFG_CONNECTIVITY_BT_H)
+#define CYCFG_CONNECTIVITY_BT_H
+
+#include "cycfg_notices.h"
+#include "cycfg_pins.h"
+
+#if defined(__cplusplus)
+extern "C" {
+#endif /* defined(__cplusplus) */
+
+#define bt_0_power_0_ENABLED 1U
+#define CYCFG_BT_LP_ENABLED (1u)
+#define CYCFG_BT_WAKE_EVENT_ACTIVE_LOW (0)
+#define CYCFG_BT_WAKE_EVENT_ACTIVE_HIGH (1)
+#define CYCFG_BT_HOST_WAKE_GPIO CYBSP_BT_HOST_WAKE_HAL_PORT_PIN
+#define CYCFG_BT_HOST_WAKE_IRQ_EVENT CYCFG_BT_WAKE_EVENT_ACTIVE_HIGH
+#define CYCFG_BT_DEV_WAKE_GPIO CYBSP_BT_DEVICE_WAKE_HAL_PORT_PIN
+#define CYCFG_BT_DEV_WAKE_POLARITY CYCFG_BT_WAKE_EVENT_ACTIVE_LOW
+#define CYCFG_BT_HOST_WAKE_PORT_NUM CYBSP_BT_HOST_WAKE_HAL_PORT_PIN
+#define CYCFG_BT_HOST_WAKE_PIN CYCFG_BT_WAKE_EVENT_ACTIVE_HIGH
+#define CYCFG_BT_DEVICE_WAKE_PORT_NUM CYBSP_BT_HOST_WAKE_HAL_PORT_PIN
+#define CYCFG_BT_DEVICE_WAKE_PIN CYCFG_BT_WAKE_EVENT_ACTIVE_HIGH
+
+#if defined(__cplusplus)
+}
+#endif /* defined(__cplusplus) */
+
+#endif /* CYCFG_CONNECTIVITY_BT_H */
