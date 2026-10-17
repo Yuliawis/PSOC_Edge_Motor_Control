@@ -61,8 +61,4 @@ a timeout; the caller must stop the motors.
 - `proj_cm55`: original image retained for packaging; not launched by CM33.
 
 CM55 is not launched because the base application reinitializes shared BSP
-pins. BSP peripheral settings are unchanged. No AI inference model is included.
-
-The [original Hello World README](docs/base_hello_world.md) is preserved for
-upstream requirements and reference. Its example behavior describes the base
-application, not the motor firmware.
+pins. BSP peripheral settings are unchanged.
